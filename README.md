@@ -3,7 +3,7 @@
 基于 [svg-captcha](https://github.com/lemonce/svg-captcha)
 
 ### 效果截图
-![](https://github.com/baisheng/captcha/blob/master/screenshot/signin.png?raw=true)
+![](https://github.com/baisheng/cmswing-ext-captcha/blob/master/screenshot/signin.png?raw=true)
 
 ### 使用说明
 
