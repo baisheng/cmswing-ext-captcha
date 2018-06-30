@@ -3,7 +3,7 @@
 
 
 ### 效果截图
-![](https://github.com/baisheng/cmswing-ext-captcha/blob/master/screenshot/signin.png?raw=true)
+<img src="https://github.com/baisheng/cmswing-ext-captcha/blob/master/screenshot/signin.png?raw=true" width="375">
 
 ### 使用说明
 
