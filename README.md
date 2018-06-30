@@ -1,19 +1,30 @@
 ## CMSWing 验证码插件 
-[CMSWing](https://github.com/arterli/CmsWing)
-基于 [svg-captcha](https://github.com/lemonce/svg-captcha)
+* 基于 [svg-captcha](https://github.com/lemonce/svg-captcha)
+
 
 ### 效果截图
 ![](https://github.com/baisheng/cmswing-ext-captcha/blob/master/screenshot/signin.png?raw=true)
 
 ### 使用说明
 
-#### 将 captcha 全部内容放置在
+#### 首先安装
+```bash
+npm install --save svg-captcha
+
+```
+
+#### 将工程内容放置在
 
 ```bash
 src
 └── controller 
     └── ext
         └── captcha
+```
+
+```bash
+cd src/controller/ext
+git clone https://github.com/baisheng/cmswing-ext-captcha.git captcha
 ```
 
 #### 页面配置
