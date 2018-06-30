@@ -1,5 +1,4 @@
 const svgCaptcha = require('svg-captcha')
-// const helper = require('think-helper')
 const cacheFont = {}
 
 module.exports = class extends think.Service {

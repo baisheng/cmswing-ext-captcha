@@ -1,4 +1,4 @@
-module.exports = class extends think.cx.extIndex {
+module.exports = class extends think.cmswing.extIndex {
   // 后台登录，控制器验证
   async signinBefore () {
     const captcha = this.extService('captcha', 'captcha')

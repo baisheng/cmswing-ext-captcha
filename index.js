@@ -1,4 +1,4 @@
-module.exports = class extends think.cx.extIndex {
+module.exports = class extends think.cmswing.extIndex {
   async captchaAction () {
     const svgCaptcha = this.extService('captcha')
     if (this.isGet) {

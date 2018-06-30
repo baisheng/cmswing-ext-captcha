@@ -1,14 +1,44 @@
-module.exports = {
-  ext: 'captcha', // 插件目录，必须为英文
-  name: 'SVG 验证码', // 插件名称
-  description: '基于 SVG 的图形验证码', // 插件描述
-  isadm: 0, // 是否有后台管理，1：有，0：没有
-  isindex: 0, // 是否需要前台访问，1：需要，0：不需要
-  version: '1.0', // 版本号
-  author: 'baisheng@gmail.com', // 作者
-  table: [], // 插件包含的 数据库表，不包含表前缀，如：cx_ext_table 就是 table，多个['table','table_2']没有留空数组。
-  sql: '', // 插件安装的时候会找个名字的sql文件导入，默认 插件目录名.sql;
-  hooks: ['signinBefore', 'signinView', 'loginBefore', 'loginView'], // 挂载的钩子，数组格式，如['hooks1', 'hooks2'],不挂载留空：[]
+## CMSWing 验证码插件 
+[CMSWing](https://github.com/arterli/CmsWing)
+基于 [svg-captcha](https://github.com/lemonce/svg-captcha)
+
+### 效果截图
+![](https://github.com/baisheng/captcha/blob/master/screenshot/signin.png?raw=true)
+
+### 使用说明
+
+#### 将 captcha 全部内容放置在
+
+```bash
+src
+└── controller 
+    └── ext
+        └── captcha
+```
+
+#### 页面配置
+    view/admin/inc/base.html 
+    
+head 中引入 js 包，验证码页面刷新使用了 vuejs 也可以用 jquery
+
+```html
+    <script type="text/javascript" src="/static/admin/js/vue.js"></script>
+    <script>
+      new Vue({
+        delimiters: ['${', '}']
+      })
+    </script>
+    <script type="text/javascript" src="/static/admin/js/axios.min.js"></script>
+```
+
+js lib 在当前工程下的 [3rd-js-lib](3rd-js-lib) 中可以找到
+
+#### 验证码个性化配置
+    config.js
+    
+可以在使用之前在 config.js 中做预置配置，也可以在后台启用后更改
+
+```javascript
   setting: [
     {
       '验证码设置': [
@@ -86,4 +116,7 @@ module.exports = {
       ]
     }
   ]
-};
+
+```
+
+注意： 该模块只适用于 [CMSWing](https://github.com/arterli/CmsWing)
